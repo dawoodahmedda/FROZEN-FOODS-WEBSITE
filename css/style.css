@@ -1,0 +1,336 @@
+/* CSS Reset */
+    {
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*CSS Variables*/
+:root {
+    --navbar-height: 59px;
+
+}
+
+/*Navigation Bar*/
+#navbar {
+    display: flex;
+    align-items: center;
+    /*position: sticky;*/
+    top: 0px;
+
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+/* Navigation bar:logo and image */
+
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 85px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation bar: list styling*/
+
+
+#navbar ul {
+    display: flex;
+}
+
+
+
+#navbar ul li {
+    display: block;
+    width: 38%;
+
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+
+#navbar ul {
+    border: 2px solid yellow;
+    padding: 8px;
+    margin: 5px 100px;
+    border-radius: 60px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    width: 751px;
+}
+
+
+#navbar ul li a:hover {
+    color: yellow;
+    background-color: black;
+
+
+}
+
+/*home section*/
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 620px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url(../images/bg.jpg) no-repeat center center/cover;
+    position: absolute;
+
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+
+}
+
+#home h1 {
+    color: yellow;
+    text-align: center;
+}
+
+#home h2{
+color: white;
+text-align: center;
+}
+/*
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5 rem;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MENU CONTAINER */
+
+#menu {
+    margin: 34px;
+    display: flex;
+}
+
+#menu .box {
+    border: 2px solid black;
+    padding: 34px;
+    margin: 30px 25px;
+    border-radius: 28px;
+    background: cornsilk;
+    margin-bottom: 5px;
+    width: 500px;
+}
+
+#menu .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+
+}
+
+#menu .box .btn {
+    justify-content: center;
+    text-align: center;
+    
+    /*padding: 6px 20px;
+    position: relative;*/
+   
+    /*left: 150px;
+    border: 2px solid yellow;
+    background-color: black;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    cursor: pointer;*/
+
+
+}
+
+#menu .box .btn:hover {
+    color: yellow;
+}
+
+
+
+
+/*services section*/
+#services {
+    margin: 34px;
+    display: flex;
+
+
+}
+
+#services .boxs {
+    border: 2px solid black;
+    padding: 34px;
+    margin: 30px 25px;
+    border-radius: 28px;
+    background: cornsilk;
+    margin-bottom: 5px;
+    width: 500px;
+}
+
+#services .boxs img {
+    height: 160px;
+    margin: auto;
+    display: block;
+
+}
+
+
+
+
+
+
+
+/*SOCIAL MEDIA SECTION*/
+
+#socialmedia-section {
+    height: 344px;
+}
+
+
+#socialmedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.socialmedia-item {
+    padding: 34px;
+}
+
+#socialmedia img {
+    height: 124px;
+
+}
+
+
+
+
+
+
+
+
+/*contact section*/
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../images/contact7.webp) no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact_box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 20px;
+    font: 1.1rem;
+}
+
+#contact-box form {
+    width: 40%;
+
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+
+}
+
+/*utility clASSES*/
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+
+.btn {
+    padding: 6px 20px;
+
+    border: 2px solid yellow;
+    background-color: black;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    cursor: pointer;
+
+
+}
+
+.btn:hover {
+    color: yellow;
+}
+
+
+
+.center {
+    text-align: center;
+}
